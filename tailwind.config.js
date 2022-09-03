@@ -6,11 +6,18 @@ module.exports = {
   ],
   theme: {
     extend: {
-              fontFamily: {
-                balonku: ['Balonku'],
-                pacifico: ['Pacifico'],
-
-            },
+      colors: {
+        slate: {
+          950: '#FEF9F9',
+        },
+        moosered: '#BD0000',
+        moosebrown: '#AD5618',
+        mooseyellow: '#FDE467',
+      },
+      fontFamily: {
+        balonku: ['Balonku'],
+        pacifico: ['Pacifico'],
+      },
     },
   },
   plugins: [

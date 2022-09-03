@@ -13,7 +13,7 @@ import {
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { BoltIcon, GlobeAltIcon, ScaleIcon } from '@heroicons/react/24/outline'
 
-const solutions = [
+const courses = [
   {
     name: 'Inbox',
     description: 'Get a better understanding of where your traffic is coming from.',
@@ -42,8 +42,8 @@ const solutions = [
 
 const navigation = [
   { name: 'Pricing', href: '#' },
-  { name: 'Partners', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'Meet Our Teachers', href: '#' },
+  { name: 'Join Our Team', href: '#' },
 ]
 const features = [
   {
@@ -69,12 +69,11 @@ const footer = {
 
 
   main: [
-    { name: 'About', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Jobs', href: '#' },
-    { name: 'Press', href: '#' },
-    { name: 'Accessibility', href: '#' },
-    { name: 'Partners', href: '#' },
+    { name: 'Courses', href: '#' },
+    { name: 'Pricing', href: '#' },
+    { name: 'Meet Our Teachers', href: '#' },
+    { name: 'Join Our Team', href: '#' },
+    { name: 'Contact', href: '#' },
   ],
   social: [
     {
@@ -114,7 +113,8 @@ const footer = {
     },
     {
       name: 'GitHub',
-      href: '#',
+      href: 'https://github.com/nippon-dev/mooseenglish-next',
+      title: 'Moose English Github Repository',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -125,19 +125,7 @@ const footer = {
         </svg>
       ),
     },
-    {
-      name: 'Dribbble',
-      href: '#',
-      icon: (props) => (
-        <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-          <path
-            fillRule="evenodd"
-            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ),
-    },
+
   ],
 }
 
@@ -149,20 +137,20 @@ export default function LandingPage() {
   return (
     <div className="bg-white">
       <header>
-        <Popover className="relative bg-white">
+        <Popover className="relative bg-slate-950">
           <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
             <div className="flex justify-start lg:w-0 lg:flex-1">
-              <a href="#">
+              <a href="/">
                 <span className="sr-only">Moose English</span>
                 <img
-                  className="h-8 w-auto sm:h-10"
-                  src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600"
-                  alt=""
+                  className="h-16 w-auto sm:h-20"
+                  src="https://res.cloudinary.com/shinkirin/image/upload/v1662208305/mooseenglish/mooseLogo-checkered.webp"
+                  alt="Moose English Logo"
                 />
               </a>
             </div>
             <div className="-my-2 -mr-2 md:hidden">
-              <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+              <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-800 hover:bg-gray-100 hover:text-moosered focus:outline-none focus:ring-2 focus:ring-inset focus:ring-moosebrown">
                 <span className="sr-only">Open menu</span>
                 <Bars3Icon className="h-6 w-6" aria-hidden="true" />
               </Popover.Button>
@@ -174,10 +162,10 @@ export default function LandingPage() {
                     <Popover.Button
                       className={classNames(
                         open ? 'text-gray-900' : 'text-gray-500',
-                        'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+                        'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-moosered focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
                       )}
                     >
-                      <span>Solutions</span>
+                      <span>Courses</span>
                       <ChevronDownIcon
                         className={classNames(
                           open ? 'text-gray-600' : 'text-gray-400',
@@ -199,7 +187,7 @@ export default function LandingPage() {
                       <Popover.Panel className="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform lg:left-1/2 lg:ml-0 lg:max-w-2xl lg:-translate-x-1/2">
                         <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                           <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
-                            {solutions.map((item) => (
+                            {courses.map((item) => (
                               <a
                                 key={item.name}
                                 href={item.href}
@@ -273,7 +261,7 @@ export default function LandingPage() {
                   </div>
                   <div className="mt-6">
                     <nav className="grid grid-cols-1 gap-7">
-                      {solutions.map((item) => (
+                      {courses.map((item) => (
                         <a
                           key={item.name}
                           href={item.href}
@@ -331,17 +319,17 @@ export default function LandingPage() {
                 <div className="absolute inset-0">
                   <img
                     className="h-full w-full object-cover"
-                    src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
-                    alt="People working on laptops"
+                    src="https://res.cloudinary.com/shinkirin/image/upload/v1661674822/mooseenglish/mooseenglish-teachers.webp"
+                    alt="Online English Lessons"
                   />
-                  <div className="absolute inset-0 bg-indigo-700 mix-blend-multiply" />
+                  <div className="absolute inset-0 bg-gray-500 mix-blend-multiply" />
                 </div>
                 <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                   <h1 className="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                    <span className="block font-balonku text-white">Take control of your</span>
-                    <span className="block font-balonku text-indigo-200">customer support</span>
+                    <span className="block font-balonku text-mooseyellow">Take control of your</span>
+                    <span className="block font-balonku text-moosebrown">customer support</span>
                   </h1>
-                  <p className="font-balonku mx-auto mt-6 max-w-lg text-center text-xl text-indigo-200 sm:max-w-3xl">
+                  <p className="font-balonku mx-auto mt-6 max-w-lg text-center text-xl text-white sm:max-w-3xl">
                     Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
                     amet fugiat veniam occaecat fugiat aliqua.
                   </p>
@@ -552,7 +540,7 @@ export default function LandingPage() {
         </nav>
         <div className="mt-8 flex justify-center space-x-6">
           {footer.social.map((item) => (
-            <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
+            <a key={item.name} href={item.href} target="_blank" rel="noreferrer" className="text-gray-400 hover:text-gray-500">
               <span className="sr-only">{item.name}</span>
               <item.icon className="h-6 w-6" aria-hidden="true" />
             </a>

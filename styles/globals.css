@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Balonku";
+  src: url("../public/fonts/Balonku-Regular.otf");
+}
+
+@font-face {
+  font-family: "Pacifico";
+  src: url("../public/fonts/Pacifico-Regular.ttf");
+}

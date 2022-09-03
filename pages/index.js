@@ -153,7 +153,7 @@ export default function LandingPage() {
           <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
             <div className="flex justify-start lg:w-0 lg:flex-1">
               <a href="#">
-                <span className="sr-only">Workflow</span>
+                <span className="sr-only">Moose English</span>
                 <img
                   className="h-8 w-auto sm:h-10"
                   src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600"
@@ -338,10 +338,10 @@ export default function LandingPage() {
                 </div>
                 <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                   <h1 className="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                    <span className="block text-white">Take control of your</span>
-                    <span className="block text-indigo-200">customer support</span>
+                    <span className="block font-balonku text-white">Take control of your</span>
+                    <span className="block font-balonku text-indigo-200">customer support</span>
                   </h1>
-                  <p className="mx-auto mt-6 max-w-lg text-center text-xl text-indigo-200 sm:max-w-3xl">
+                  <p className="font-balonku mx-auto mt-6 max-w-lg text-center text-xl text-indigo-200 sm:max-w-3xl">
                     Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
                     amet fugiat veniam occaecat fugiat aliqua.
                   </p>
@@ -474,7 +474,7 @@ export default function LandingPage() {
               <h2 className="text-3xl font-bold tracking-tight text-white" id="join-heading">
                 Join our team
               </h2>
-              <p className="text-lg text-white">
+              <p className="text-lg font-balonku text-white">
                 Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus
                 dui laoreet diam sed lacus, fames.
               </p>

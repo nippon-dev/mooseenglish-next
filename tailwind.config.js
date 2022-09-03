@@ -5,7 +5,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+              fontFamily: {
+                balonku: ['Balonku'],
+                pacifico: ['Pacifico'],
+
+            },
+    },
   },
   plugins: [
     require('@tailwindcss/aspect-ratio'),

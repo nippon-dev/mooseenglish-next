@@ -136,7 +136,7 @@ function classNames(...classes) {
 export default function LandingPage() {
   return (
     <div className="bg-yellow-900">
-      <header className="top-0 sticky z-50">
+      <header className="top-0 sticky z-50 border-b-2 border-moosegreen">
         <Popover className="relative bg-moosepink">
           <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
             <div className="flex justify-start lg:w-0 lg:flex-1">

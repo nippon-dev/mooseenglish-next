@@ -135,22 +135,22 @@ function classNames(...classes) {
 
 export default function LandingPage() {
   return (
-    <div className="bg-white">
+    <div className="bg-yellow-900">
       <header className="top-0 sticky z-50">
-        <Popover className="relative bg-slate-950">
+        <Popover className="relative bg-moosepink">
           <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
             <div className="flex justify-start lg:w-0 lg:flex-1">
               <a href="/">
                 <span className="sr-only">Moose English</span>
                 <img
-                  className="h-16 w-auto sm:h-20"
+                  className="h-16 w-auto sm:h-20 rounded-md"
                   src="https://res.cloudinary.com/shinkirin/image/upload/v1662208305/mooseenglish/mooseLogo-checkered.webp"
                   alt="Moose English Logo"
                 />
               </a>
             </div>
             <div className="-my-2 -mr-2 md:hidden">
-              <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-800 hover:bg-gray-100 hover:text-moosered focus:outline-none focus:ring-2 focus:ring-inset focus:ring-moosebrown">
+              <Popover.Button className="inline-flex items-center justify-center rounded-md bg-yellow-900 p-2 text-white hover:bg-mooseltblue hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-900">
                 <span className="sr-only">Open menu</span>
                 <Bars3Icon className="h-6 w-6" aria-hidden="true" />
               </Popover.Button>
@@ -159,6 +159,7 @@ export default function LandingPage() {
               <Popover className="relative">
                 {({ open }) => (
                   <>
+                  {/* Courses links. Will add later.
                     <Popover.Button
                       className={classNames(
                         open ? 'text-gray-900' : 'text-gray-500',
@@ -174,7 +175,7 @@ export default function LandingPage() {
                         aria-hidden="true"
                       />
                     </Popover.Button>
-
+                  End of courses links */}
                     <Transition
                       as={Fragment}
                       enter="transition ease-out duration-200"
@@ -211,18 +212,18 @@ export default function LandingPage() {
               </Popover>
 
               {navigation.map((item) => (
-                <a key={item.name} href={item.href} className="text-base font-medium text-gray-500 hover:text-gray-900">
+                <a key={item.name} href={item.href} className="text-base font-medium text-gray-900 hover:text-yellow-900">
                   {item.name}
                 </a>
               ))}
             </Popover.Group>
             <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
-              <a href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+              <a href="#" className="whitespace-nowrap text-base font-medium text-gray-900 hover:text-yellow-900">
                 Sign in
               </a>
               <a
                 href="#"
-                className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-yellow-900 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-mooseltblue"
               >
                 Sign up
               </a>
@@ -242,24 +243,25 @@ export default function LandingPage() {
               focus
               className="absolute inset-x-0 top-0 z-30 origin-top-right transform p-2 transition md:hidden"
             >
-              <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+              <div className="divide-y-2 divide-yellow-900 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
                 <div className="px-5 pt-5 pb-6">
                   <div className="flex items-center justify-between">
                     <div>
                       <img
-                        className="h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600"
-                        alt="Workflow"
+                        className="h-16 w-auto"
+                        src="https://res.cloudinary.com/shinkirin/image/upload/v1662208305/mooseenglish/mooseLogo-checkered.webp"
+                        alt="Moose English Logo"
                       />
                     </div>
                     <div className="-mr-2">
-                      <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                      <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-900 hover:bg-mooseltblue hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-900">
                         <span className="sr-only">Close menu</span>
                         <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                       </Popover.Button>
                     </div>
                   </div>
                   <div className="mt-6">
+                    {/* Will add courses links later
                     <nav className="grid grid-cols-1 gap-7">
                       {courses.map((item) => (
                         <a
@@ -274,15 +276,17 @@ export default function LandingPage() {
                         </a>
                       ))}
                     </nav>
+                    End of courses links */}
                   </div>
                 </div>
+                
                 <div className="py-6 px-5">
                   <div className="grid grid-cols-2 gap-4">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
-                        className="text-base font-medium text-gray-900 hover:text-gray-700"
+                        className="text-base font-medium text-gray-900 hover:text-yellow-900"
                       >
                         {item.name}
                       </a>
@@ -291,13 +295,13 @@ export default function LandingPage() {
                   <div className="mt-6">
                     <a
                       href="#"
-                      className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                      className="flex w-full items-center justify-center rounded-md border border-transparent bg-yellow-900 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-mooseltblue"
                     >
                       Sign up
                     </a>
-                    <p className="mt-6 text-center text-base font-medium text-gray-500">
-                      Existing customer?
-                      <a href="#" className="text-gray-900">
+                    <p className="mt-6 text-center text-base font-medium text-gray-900">
+                      Existing student?
+                      <a href="#" className="ml-2 text-gray-900 hover:text-yellow-900">
                         Sign in
                       </a>
                     </p>
@@ -313,7 +317,7 @@ export default function LandingPage() {
         <div>
           {/* Hero card */}
           <div className="relative">
-            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
+            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-brown-900" />
             <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
               <div className="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
                 <div className="absolute inset-0">

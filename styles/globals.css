@@ -11,3 +11,8 @@
   font-family: "Pacifico";
   src: url("../public/fonts/Pacifico-Regular.ttf");
 }
+
+@font-face {
+  font-family: "Bubblegum";
+  src: url("../public/fonts/BubblegumSans-Regular.ttf");
+}

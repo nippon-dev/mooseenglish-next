@@ -24,6 +24,7 @@ module.exports = {
       fontFamily: {
         balonku: ['Balonku'],
         pacifico: ['Pacifico'],
+        bubblegum: ['Bubblegum'],
       },
     },
   },

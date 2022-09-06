@@ -330,12 +330,11 @@ export default function LandingPage() {
                 </div>
                 <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                   <h1 className="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                    <span className="block font-balonku text-mooseyellow">Take control of your</span>
-                    <span className="block font-balonku text-moosebrown">customer support</span>
+                    <span className="block font-balonku text-mooseyellow">Balonku Font</span>
+                    <span className="block font-bubblegum text-moosebrown">Bubblegum Font</span>
                   </h1>
-                  <p className="font-balonku mx-auto mt-6 max-w-lg text-center text-xl text-white sm:max-w-3xl">
-                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
-                    amet fugiat veniam occaecat fugiat aliqua.
+                  <p className="font-bubblegum mx-auto mt-6 max-w-lg text-center text-xl text-white sm:max-w-3xl">
+                    I think the Bubblegum Google Font is nice here. What do you think?
                   </p>
                   <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
                     <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">

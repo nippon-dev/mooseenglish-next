@@ -41,9 +41,10 @@ const courses = [
 ]
 
 const navigation = [
-  { name: 'Pricing', href: '#' },
+  { name: 'Home', href: '/' },
+  { name: 'Courses', href: '/courses' },
   { name: 'Meet Our Teachers', href: '/meet-our-teachers' },
-  { name: 'Join Our Team', href: '#' },
+  { name: 'Join Our Team', href: '/join-our-team' },
 ]
 const features = [
   {
@@ -69,11 +70,10 @@ const footer = {
 
 
   main: [
-    { name: 'Courses', href: '#' },
-    { name: 'Pricing', href: '#' },
+    { name: 'Courses', href: '/courses' },
     { name: 'Meet Our Teachers', href: '/meet-our-teachers' },
-    { name: 'Join Our Team', href: '#' },
-    { name: 'Contact', href: '#' },
+    { name: 'Join Our Team', href: '/join-our-team' },
+    { name: 'Contact', href: '/contact' },
   ],
   social: [
     {
@@ -518,7 +518,7 @@ export default function LandingPage() {
           </div>
           <div className="ml-3 inline-flex">
             <a
-              href="#"
+              href="/contact" title="Contact Moose English"
               className="inline-flex items-center justify-center rounded-md border border-transparent bg-mooseyellow bg-opacity-60 px-5 py-3 text-base font-medium font-bubblegum text-white hover:bg-yellow-900 uppercase"
             >
               Contact Us

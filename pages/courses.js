@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { StarIcon } from '@heroicons/react/20/solid'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
@@ -40,7 +41,7 @@ const courses = [
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'Pricing', href: '/courses' },
+  { name: 'Courses', href: '/courses' },
   { name: 'Meet Our Teachers', href: '/meet-our-teachers' },
   { name: 'Join Our Team', href: '/join-our-team' },
 ]
@@ -108,51 +109,57 @@ const footer = {
   ],
 }
 
-const people = [
+const products = [
+
+
   {
-    name: 'Emma Dorsey',
-    role: 'Senior Front-end Developer',
-    imageUrl:
-      'https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
-    twitterUrl: '#',
-    linkedinUrl: '#',
+    id: 1,
+    name: 'Beginner English',
+    price: '$149',
+    rating: 5,
+    reviewCount: 38,
+    imageSrc: 'https://res.cloudinary.com/shinkirin/image/upload/v1662542086/mooseenglish/mooseenglishcourse1.webp',
+    imageAlt: 'Moose English Course',
+    href: '#',
   },
-    {
-    name: 'Emma Dorsey',
-    role: 'Senior Front-end Developer',
-    imageUrl:
-      'https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
-    twitterUrl: '#',
-    linkedinUrl: '#',
+  {
+    id: 2,
+    name: 'Intermediate English',
+    price: '$159',
+    rating: 5,
+    reviewCount: 18,
+    imageSrc: 'https://res.cloudinary.com/shinkirin/image/upload/v1662542085/mooseenglish/mooseenglishcourse2.webp',
+    imageAlt: 'Moose English Course',
+    href: '#',
   },
-    {
-    name: 'Emma Dorsey',
-    role: 'Senior Front-end Developer',
-    imageUrl:
-      'https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
-    twitterUrl: '#',
-    linkedinUrl: '#',
+  {
+    id: 3,
+    name: 'Advanced English',
+    price: '$159',
+    rating: 5,
+    reviewCount: 14,
+    imageSrc: 'https://res.cloudinary.com/shinkirin/image/upload/v1662542085/mooseenglish/mooseenglishcourse4.webp',
+    imageAlt: 'Moose English Course',
+    href: '#',
   },
-    {
-    name: 'Emma Dorsey',
-    role: 'Senior Front-end Developer',
-    imageUrl:
-      'https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
-    twitterUrl: '#',
-    linkedinUrl: '#',
+  {
+    id: 4,
+    name: 'IELTS',
+    price: '$159',
+    rating: 4,
+    reviewCount: 21,
+    imageSrc: 'https://res.cloudinary.com/shinkirin/image/upload/v1662542086/mooseenglish/mooseenglishcourse3.webp',
+    imageAlt: 'Moose English Course',
+    href: '#',
   },
-  // More people...
+  // More products...
 ]
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function MeetOurTeachers() {
+export default function Courses() {
   return (
     <div className="bg-black">
       <header className="top-0 sticky z-50 border-b-2 border-mooseyellow">
@@ -182,7 +189,7 @@ export default function MeetOurTeachers() {
                     <Popover.Button
                       className={classNames(
                         open ? 'text-gray-900' : 'text-gray-500',
-                        'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-moosered focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+                        'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-moosered focus:outline-none focus:ring-2 focus:ring-moosebrown focus:ring-offset-2'
                       )}
                     >
                       <span>Courses</span>
@@ -333,68 +340,96 @@ export default function MeetOurTeachers() {
       </header>
 
       <main>
-        
- {/* Teacher Component */}
-  <div className="bg-black">
-      <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8 lg:py-24">
-        <div className="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
-          <div className="space-y-5 sm:space-y-4">
-            <h2 className="text-3xl text-white font-bold font-balonku tracking-tight sm:text-4xl">Our Teachers</h2>
-            <p className="text-xl text-white font-bubblegum">
-              Nulla quam felis, enim faucibus proin velit, ornare id pretium. Augue ultrices sed arcu condimentum
-              vestibulum suspendisse. Volutpat eu faucibus vivamus eget bibendum cras.
-            </p>
-          </div>
-          <div className="lg:col-span-2">
-            <ul
-              role="list"
-              className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:gap-x-8"
-            >
-              {people.map((person) => (
-                <li key={person.name}>
-                  <div className="space-y-4">
-                    <div className="aspect-w-3 aspect-h-2">
-                      <img className="rounded-lg object-cover shadow-lg" src={person.imageUrl} alt="" />
-                    </div>
-                    <div className="space-y-1 text-xl font-medium leading-6 text-white font-balonku">
-                      <h3>{person.name}</h3>
-                      <p className="text-white font-bubblegum">{person.role}</p>
-                    </div>
-                    <div className="text-lg">
-                      <p className="text-white font-bubblegum">{person.bio}</p>
-                    </div>
 
-                    <ul role="list" className="flex space-x-5">
-                      <li>
-                        <a href={person.twitterUrl} className="text-white hover:text-mooseyellow">
-                          <span className="sr-only">Twitter</span>
-                          <svg className="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
-                          </svg>
-                        </a>
-                      </li>
-                      <li>
-                        <a href={person.linkedinUrl} className="text-white hover:text-mooseyellow">
-                          <span className="sr-only">LinkedIn</span>
-                          <svg className="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                              fillRule="evenodd"
-                              d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
-                              clipRule="evenodd"
-                            />
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
+
+          {/* Hero card */}
+          <div className="relative">
+            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-brown-900" />
+            <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 mt-6">
+              <div className="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
+                <div className="absolute inset-0">
+                  <img
+                    className="h-full w-full object-cover"
+                    src="https://res.cloudinary.com/shinkirin/image/upload/v1661662010/mooseenglish/mooseenglishHeader.webp"
+                    alt="Online English Lessons"
+                  />
+                  <div className="absolute inset-0 bg-gray-500 mix-blend-multiply" />
+                </div>
+                <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+                  <h1 className="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+                    <span className="block font-bubblegum text-mooseyellow uppercase">Our Courses</span>
+                    <span className="block font-bubblegum text-moosebrown m-4">Try a demo class for just $2.99 USD!</span>
+                  </h1>
+                  <p className="font-bubblegum mx-auto mt-6 max-w-lg text-center text-xl text-white sm:max-w-3xl">
+                    Give Moose English a try with one of our dedicated teachers now. Our teachers follow a specialized English curriculum developed for to our boutique style online English learning centre. 
+                  </p>
+                  <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
+                    <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
+                      <a
+                        href="#"
+                        className="flex items-center justify-center rounded-md border border-transparent bg-yellow-900 px-4 py-3 text-base font-medium font-bubblegum text-white shadow-sm hover:bg-mooseyellow hover:text-black sm:px-8 uppercase"
+                      >
+                        Schedule an appointment
+                      </a>
+                      <a
+                        href="/meet-our-teachers"
+                        className="flex items-center justify-center rounded-md border border-transparent bg-mooseyellow bg-opacity-60 px-4 py-3 text-base font-medium font-bubblegum text-white shadow-sm hover:bg-yellow-900 sm:px-8 uppercase"
+                      >
+                        Meet your teacher
+                      </a>
+                    </div>
                   </div>
-                </li>
-              ))}
-            </ul>
+                </div>
+              </div>
+            </div>
           </div>
+        
+ {/* Courses Component */}
+ <div className="bg-white">
+      <div className="mx-auto max-w-7xl overflow-hidden sm:px-6 lg:px-8">
+        <h2 className="sr-only">Products</h2>
+
+        <div className="-mx-px grid grid-cols-2 border-l border-gray-200 sm:mx-0 md:grid-cols-3 lg:grid-cols-4">
+          {products.map((product) => (
+            <div key={product.id} className="group relative border-r border-b border-gray-200 p-4 sm:p-6">
+              <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-lg bg-gray-200 group-hover:opacity-75">
+                <img
+                  src={product.imageSrc}
+                  alt={product.imageAlt}
+                  className="h-full w-full object-cover object-center"
+                />
+              </div>
+              <div className="pt-10 pb-4 text-center">
+                <h3 className="text-sm font-medium text-gray-900">
+                  <a href={product.href}>
+                    <span aria-hidden="true" className="absolute inset-0" />
+                    {product.name}
+                  </a>
+                </h3>
+                <div className="mt-3 flex flex-col items-center">
+                  <p className="sr-only">{product.rating} out of 5 stars</p>
+                  <div className="flex items-center">
+                    {[0, 1, 2, 3, 4].map((rating) => (
+                      <StarIcon
+                        key={rating}
+                        className={classNames(
+                          product.rating > rating ? 'text-yellow-400' : 'text-gray-200',
+                          'flex-shrink-0 h-5 w-5'
+                        )}
+                        aria-hidden="true"
+                      />
+                    ))}
+                  </div>
+                  <p className="mt-1 text-sm text-gray-500">{product.reviewCount} reviews</p>
+                </div>
+                <p className="mt-4 text-base font-medium text-gray-900">{product.price}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
- {/* End of Teacher Component */}
+ {/* End of Courses Component */}
     {/* Footer Component */}
     <footer className="bg-black border-t-2 border-white border-dotted">
       <div className="mx-auto max-w-7xl overflow-hidden py-12 px-4 sm:px-6 lg:px-8">

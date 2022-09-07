@@ -11,6 +11,7 @@ import {
   QuestionMarkCircleIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
+import Link from 'next/link'
 
 const courses = [
   {
@@ -166,14 +167,14 @@ export default function Courses() {
         <Popover className="relative bg-black">
           <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
             <div className="flex justify-start lg:w-0 lg:flex-1">
-              <a href="/">
+              <Link href="/"><a>
                 <span className="sr-only">Moose English</span>
                 <img
                   className="h-16 w-auto sm:h-20 rounded-md"
                   src="https://res.cloudinary.com/shinkirin/image/upload/v1662208305/mooseenglish/mooseLogo-checkered.webp"
                   alt="Moose English Logo"
                 />
-              </a>
+              </a></Link>
             </div>
             <div className="-my-2 -mr-2 md:hidden">
               <Popover.Button className="inline-flex items-center justify-center rounded-md bg-yellow-900 p-2 text-white hover:bg-mooseltblue hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-900">
@@ -371,12 +372,13 @@ export default function Courses() {
                       >
                         Schedule an appointment
                       </a>
+                      <Link href="/meet-our-teachers">
                       <a
-                        href="/meet-our-teachers"
                         className="flex items-center justify-center rounded-md border border-transparent bg-mooseyellow bg-opacity-60 px-4 py-3 text-base font-medium font-bubblegum text-white shadow-sm hover:bg-yellow-900 sm:px-8 uppercase"
                       >
                         Meet your teacher
                       </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

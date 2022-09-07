@@ -120,7 +120,8 @@ export default function JoinOurTeam() {
         <Popover className="relative bg-black">
           <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
             <div className="flex justify-start lg:w-0 lg:flex-1">
-              <a href="/">
+            <Link href="/">
+              <a>
                 <span className="sr-only">Moose English</span>
                 <img
                   className="h-16 w-auto sm:h-20 rounded-md"
@@ -128,6 +129,7 @@ export default function JoinOurTeam() {
                   alt="Moose English Logo"
                 />
               </a>
+              </Link>
             </div>
             <div className="-my-2 -mr-2 md:hidden">
               <Popover.Button className="inline-flex items-center justify-center rounded-md bg-yellow-900 p-2 text-white hover:bg-mooseltblue hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-900">
@@ -309,9 +311,9 @@ export default function JoinOurTeam() {
       <div className="relative py-16 px-4 sm:py-24 sm:px-6 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:px-8 lg:py-32">
         <div className="lg:pr-8">
           <div className="mx-auto max-w-md sm:max-w-lg lg:mx-0">
-            <h2 className="text-3xl font-bold font-balonku text-moosebrown tracking-tight sm:text-4xl">Let's work together</h2>
+            <h2 className="text-3xl font-bold font-balonku text-moosebrown tracking-tight sm:text-4xl">Let&apos;s work together</h2>
             <p className="mt-4 text-lg font-bubblegum text-gray-500 sm:mt-3">
-              We’d love to hear from you! Send us a message using the form opposite, or email us. We’d love to hear from
+              We’d love to hear from you! Send us a message using the form opposite, or email us. We&apos;d love to hear from
               you! Send us a message using the form opposite, or email us.
             </p>
             <form action="#" method="POST" className="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">

@@ -11,7 +11,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import { BoltIcon, GlobeAltIcon, ScaleIcon } from '@heroicons/react/24/outline'
+import { AcademicCapIcon, ScaleIcon, PresentationChartBarIcon } from '@heroicons/react/24/outline'
 
 const courses = [
   {
@@ -47,22 +47,22 @@ const navigation = [
 ]
 const features = [
   {
-    name: 'Competitive exchange rates',
+    name: 'Flexible Lessons',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: GlobeAltIcon,
-  },
-  {
-    name: 'No hidden fees',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Start your lesson anytime with one of our teachers based on your schedule. Schedule an appointment anytime.',
     icon: ScaleIcon,
   },
   {
-    name: 'Transfers are instant',
+    name: 'Interactive Learning',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: BoltIcon,
+      'Learning should be fun. Our teachers will help make the English process fun with interactive lessons for your child.',
+    icon: PresentationChartBarIcon,
+  },
+  {
+    name: 'Highly Trained Teachers',
+    description:
+      'We handpick and develop talented teachers locally and abroad. This means better learning outcomes for your child and cost savings for your family.',
+    icon: AcademicCapIcon,
   },
 ]
 const footer = {
@@ -212,7 +212,7 @@ export default function LandingPage() {
               </Popover>
 
               {navigation.map((item) => (
-                <a key={item.name} href={item.href} className="text-base font-medium text-white hover:text-mooseyellow">
+                <a key={item.name} href={item.href} className="text-base font-medium font-bubblegum text-white hover:text-mooseyellow">
                   {item.name}
                 </a>
               ))}
@@ -286,7 +286,7 @@ export default function LandingPage() {
                       <a
                         key={item.name}
                         href={item.href}
-                        className="text-base font-medium text-gray-900 hover:text-yellow-900"
+                        className="text-base font-medium  font-bubblegum text-gray-900 hover:text-yellow-900"
                       >
                         {item.name}
                       </a>
@@ -318,7 +318,7 @@ export default function LandingPage() {
           {/* Hero card */}
           <div className="relative">
             <div className="absolute inset-x-0 bottom-0 h-1/2 bg-brown-900" />
-            <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 mt-6">
               <div className="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
                 <div className="absolute inset-0">
                   <img
@@ -330,25 +330,25 @@ export default function LandingPage() {
                 </div>
                 <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                   <h1 className="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                    <span className="block font-balonku text-mooseyellow">Balonku Font</span>
-                    <span className="block font-bubblegum text-moosebrown">Bubblegum Font</span>
+                    <span className="block font-bubblegum text-mooseyellow">Try a 1-on-1 Demo Class Now</span>
+                    <span className="block font-bubblegum text-moosebrown m-4">Just for $2.99 USD!</span>
                   </h1>
                   <p className="font-bubblegum mx-auto mt-6 max-w-lg text-center text-xl text-white sm:max-w-3xl">
-                    I think the Bubblegum Google Font is nice here. What do you think?
+                    Give Moose English a try with one of our dedicated teachers now. Our teachers follow a specialized English curriculum developed for to our boutique style online English learning centre. 
                   </p>
                   <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
                     <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
                       <a
                         href="#"
-                        className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-indigo-700 shadow-sm hover:bg-indigo-50 sm:px-8"
+                        className="flex items-center justify-center rounded-md border border-transparent bg-yellow-900 px-4 py-3 text-base font-medium font-bubblegum text-white shadow-sm hover:bg-mooseyellow hover:text-black sm:px-8 uppercase"
                       >
-                        Get started
+                        Schedule an appointment
                       </a>
                       <a
                         href="#"
-                        className="flex items-center justify-center rounded-md border border-transparent bg-indigo-500 bg-opacity-60 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8"
+                        className="flex items-center justify-center rounded-md border border-transparent bg-mooseyellow bg-opacity-60 px-4 py-3 text-base font-medium font-bubblegum text-white shadow-sm hover:bg-yellow-900 sm:px-8 uppercase"
                       >
-                        Live demo
+                        Meet your teachers
                       </a>
                     </div>
                   </div>
@@ -407,14 +407,14 @@ export default function LandingPage() {
               <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
                 <img
                   className="rounded-3xl object-cover object-center shadow-2xl"
-                  src="https://images.unsplash.com/photo-1507207611509-ec012433ff52?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=934&q=80"
-                  alt=""
+                  src="https://res.cloudinary.com/shinkirin/image/upload/v1661691808/mooseenglish/moose.webp"
+                  alt="Moose English"
                 />
               </div>
             </div>
           </div>
 
-          <div className="relative bg-indigo-600 lg:col-span-10 lg:col-start-3 lg:row-start-1 lg:grid lg:grid-cols-10 lg:items-center lg:rounded-3xl">
+          <div className="relative bg-moosedkblue lg:col-span-10 lg:col-start-3 lg:row-start-1 lg:grid lg:grid-cols-10 lg:items-center lg:rounded-3xl">
             <div className="absolute inset-0 hidden overflow-hidden rounded-3xl lg:block" aria-hidden="true">
               <svg
                 className="absolute bottom-full left-full translate-y-1/3 -translate-x-2/3 transform xl:bottom-auto xl:top-0 xl:translate-y-0"
@@ -433,7 +433,7 @@ export default function LandingPage() {
                     height={20}
                     patternUnits="userSpaceOnUse"
                   >
-                    <rect x={0} y={0} width={4} height={4} className="text-indigo-500" fill="currentColor" />
+                    <rect x={0} y={0} width={4} height={4} className="text-black" fill="currentColor" />
                   </pattern>
                 </defs>
                 <rect width={404} height={384} fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
@@ -462,18 +462,17 @@ export default function LandingPage() {
               </svg>
             </div>
             <div className="relative mx-auto max-w-md space-y-6 py-12 px-4 sm:max-w-3xl sm:py-16 sm:px-6 lg:col-span-6 lg:col-start-4 lg:max-w-none lg:p-0">
-              <h2 className="text-3xl font-bold tracking-tight text-white" id="join-heading">
-                Join our team
+              <h2 className="font-balonku text-4xl font-bold tracking-tight text-white" id="join-heading">
+                Study English Online
               </h2>
-              <p className="text-lg font-balonku text-white">
-                Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus
-                dui laoreet diam sed lacus, fames.
+              <p className="text-lg font-bubblegum text-white">
+                 Study with trained English teachers handpicked and developed for Moose English. Our teachers follow a specialized English curriculum. Our student-centered Moose English platform eases the burden of stress for your children, helping make English learning more fun and a positive experience. 
               </p>
               <a
-                className="block w-full rounded-md border border-transparent bg-white py-3 px-5 text-center text-base font-medium text-indigo-700 shadow-md hover:bg-gray-50 sm:inline-block sm:w-auto"
+                className="block w-full rounded-md border border-transparent bg-white py-3 px-5 text-center text-base font-bubblegum font-medium text-black shadow-md hover:bg-mooseyellow sm:inline-block sm:w-auto uppercase"
                 href="#"
               >
-                Explore open positions
+                Try a demo lesson now for $2.99 USD!
               </a>
             </div>
           </div>
@@ -484,7 +483,7 @@ export default function LandingPage() {
     {/* Features Component */}
     <div className="bg-black py-12 font-bubblegum">
       <div className="mx-auto max-w-xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-        <h2 className="sr-only">A better way to send money.</h2>
+        <h2 className="sr-only">Study English Online with Moose English.</h2>
         <dl className="space-y-10 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
           {features.map((feature) => (
             <div key={feature.name}>
@@ -505,24 +504,24 @@ export default function LandingPage() {
      <div className="bg-black">
       <div className="mx-auto max-w-7xl py-12 px-4 text-center sm:px-6 lg:py-16 lg:px-8">
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          <span className="block font-balonku">Ready to dive in?</span>
-          <span className="block font-bubblegum">Start your free trial today.</span>
+          <span className="block font-balonku">Learn Anytime, Anywhere.</span>
+          <span className="block font-bubblegum">Have the freedom to learn when you want.</span>
         </h2>
         <div className="mt-8 flex justify-center">
           <div className="inline-flex rounded-md shadow">
             <a
               href="#"
-              className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white hover:bg-indigo-700"
+              className="inline-flex items-center justify-center rounded-md border border-transparent bg-yellow-900 px-5 py-3 text-base font-medium font-bubblegum text-white hover:bg-mooseyellow hover:text-black uppercase"
             >
-              Get started
+              Learn now
             </a>
           </div>
           <div className="ml-3 inline-flex">
             <a
               href="#"
-              className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-100 px-5 py-3 text-base font-medium text-indigo-700 hover:bg-indigo-200"
+              className="inline-flex items-center justify-center rounded-md border border-transparent bg-mooseyellow bg-opacity-60 px-5 py-3 text-base font-medium font-bubblegum text-white hover:bg-yellow-900 uppercase"
             >
-              Learn more
+              Contact Us
             </a>
           </div>
         </div>
@@ -535,7 +534,7 @@ export default function LandingPage() {
         <nav className="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
           {footer.main.map((item) => (
             <div key={item.name} className="px-5 py-2">
-              <a href={item.href} className="text-base text-white hover:text-mooseyellow">
+              <a href={item.href} className="text-base text-white  font-bubblegum hover:text-mooseyellow">
                 {item.name}
               </a>
             </div>

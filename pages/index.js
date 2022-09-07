@@ -221,15 +221,18 @@ export default function LandingPage() {
               ))}
             </Popover.Group>
             <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
-              <a href="#" className="whitespace-nowrap text-base font-medium text-white hover:text-mooseyellow">
+              <Link href="#">
+              <a className="whitespace-nowrap text-base font-medium text-white hover:text-mooseyellow">
                 Sign in
               </a>
+              </Link>
+              <Link href="/schedule">
               <a
-                href="#"
                 className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-yellow-900 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-mooseyellow hover:text-black"
               >
                 Sign up
               </a>
+              </Link>
             </div>
           </div>
 
@@ -296,17 +299,20 @@ export default function LandingPage() {
                     ))}
                   </div>
                   <div className="mt-6">
+                    <Link href="/schedule">
                     <a
-                      href="#"
                       className="flex w-full items-center justify-center rounded-md border border-transparent bg-yellow-900 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-mooseltblue"
                     >
                       Sign up
                     </a>
+                    </Link>
                     <p className="mt-6 text-center text-base font-medium text-gray-900">
                       Existing student?
-                      <a href="#" className="ml-2 text-gray-900 hover:text-yellow-900">
+                      <Link href="#">
+                      <a className="ml-2 text-gray-900 hover:text-yellow-900">
                         Sign in
                       </a>
+                      </Link>
                     </p>
                   </div>
                 </div>
@@ -341,12 +347,13 @@ export default function LandingPage() {
                   </p>
                   <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
                     <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
+                      <Link href="/schedule">
                       <a
-                        href="#"
                         className="flex items-center justify-center rounded-md border border-transparent bg-yellow-900 px-4 py-3 text-base font-medium font-bubblegum text-white shadow-sm hover:bg-mooseyellow hover:text-black sm:px-8 uppercase"
                       >
                         Schedule an appointment
                       </a>
+                      </Link>
                       <Link href="/meet-our-teachers">
                       <a
                         className="flex items-center justify-center rounded-md border border-transparent bg-mooseyellow bg-opacity-60 px-4 py-3 text-base font-medium font-bubblegum text-white shadow-sm hover:bg-yellow-900 sm:px-8 uppercase"
@@ -472,12 +479,13 @@ export default function LandingPage() {
               <p className="text-lg font-bubblegum text-white">
                  Study with trained English teachers handpicked and developed for Moose English. Our teachers follow a specialized English curriculum. Our student-centered Moose English platform eases the burden of stress for your children, helping make English learning more fun and a positive experience. 
               </p>
+              <Link href="/schedule">
               <a
                 className="block w-full rounded-md border border-transparent bg-white py-3 px-5 text-center text-base font-bubblegum font-medium text-black shadow-md hover:bg-mooseyellow sm:inline-block sm:w-auto uppercase"
-                href="#"
               >
                 Try a demo lesson now for $2.99 USD!
               </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -513,12 +521,13 @@ export default function LandingPage() {
         </h2>
         <div className="mt-8 flex justify-center">
           <div className="inline-flex rounded-md shadow">
+            <Link href="/schedule">
             <a
-              href="#"
               className="inline-flex items-center justify-center rounded-md border border-transparent bg-yellow-900 px-5 py-3 text-base font-medium font-bubblegum text-white hover:bg-mooseyellow hover:text-black uppercase"
             >
               Learn now
             </a>
+            </Link>
           </div>
           <div className="ml-3 inline-flex">
             <a

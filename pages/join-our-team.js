@@ -201,15 +201,19 @@ export default function JoinOurTeam() {
               ))}
             </Popover.Group>
             <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
-              <a href="#" className="whitespace-nowrap text-base font-medium text-white hover:text-mooseyellow">
+                <Link href="/schedule">
+              <a className="whitespace-nowrap text-base font-medium text-white hover:text-mooseyellow">
                 Sign in
               </a>
+              </Link>
+              <Link href="#">
               <a
-                href="#"
+                
                 className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-yellow-900 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-mooseyellow hover:text-black"
               >
                 Sign up
               </a>
+              </Link>
             </div>
           </div>
 
@@ -276,17 +280,21 @@ export default function JoinOurTeam() {
                     ))}
                   </div>
                   <div className="mt-6">
+                    <Link href="/schedule">
                     <a
-                      href="#"
+                      
                       className="flex w-full items-center justify-center rounded-md border border-transparent bg-yellow-900 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-mooseltblue"
                     >
                       Sign up
                     </a>
+                    </Link>
                     <p className="mt-6 text-center text-base font-medium text-gray-900">
                       Existing student?
-                      <a href="#" className="ml-2 text-gray-900 hover:text-yellow-900">
+                      <Link href="#">
+                      <a className="ml-2 text-gray-900 hover:text-yellow-900">
                         Sign in
                       </a>
+                      </Link>
                     </p>
                   </div>
                 </div>

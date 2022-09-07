@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import { StarIcon } from '@heroicons/react/20/solid'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
@@ -11,7 +12,6 @@ import {
   QuestionMarkCircleIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
-import Link from 'next/link'
 
 const courses = [
   {

@@ -135,9 +135,9 @@ function classNames(...classes) {
 
 export default function LandingPage() {
   return (
-    <div className="bg-yellow-900">
-      <header className="top-0 sticky z-50 border-b-2 border-moosegreen">
-        <Popover className="relative bg-moosepink">
+    <div className="bg-black">
+      <header className="top-0 sticky z-50 border-b-2 border-mooseyellow">
+        <Popover className="relative bg-black">
           <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
             <div className="flex justify-start lg:w-0 lg:flex-1">
               <a href="/">
@@ -212,18 +212,18 @@ export default function LandingPage() {
               </Popover>
 
               {navigation.map((item) => (
-                <a key={item.name} href={item.href} className="text-base font-medium text-gray-900 hover:text-yellow-900">
+                <a key={item.name} href={item.href} className="text-base font-medium text-white hover:text-mooseyellow">
                   {item.name}
                 </a>
               ))}
             </Popover.Group>
             <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
-              <a href="#" className="whitespace-nowrap text-base font-medium text-gray-900 hover:text-yellow-900">
+              <a href="#" className="whitespace-nowrap text-base font-medium text-white hover:text-mooseyellow">
                 Sign in
               </a>
               <a
                 href="#"
-                className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-yellow-900 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-mooseltblue"
+                className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-yellow-900 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-mooseyellow hover:text-black"
               >
                 Sign up
               </a>
@@ -358,9 +358,9 @@ export default function LandingPage() {
           </div>
 
           {/* Logo cloud */}
-          <div className="bg-gray-100">
+          <div className="bg-black">
             <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
-              <p className="text-center text-base font-semibold text-gray-500">
+              <p className="font-bubblegum text-center text-base font-semibold text-white">
                 Trusted by over 5 very average small businesses
               </p>
               <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
@@ -397,8 +397,8 @@ export default function LandingPage() {
         </div>
 
         {/* CTA Component */}
-        <div className="relative bg-white py-16">
-      <div className="absolute inset-x-0 top-0 hidden h-1/2 bg-gray-50 lg:block" aria-hidden="true" />
+        <div className="relative bg-black py-16">
+      <div className="absolute inset-x-0 top-0 hidden h-1/2 bg-black lg:block" aria-hidden="true" />
       <div className="mx-auto max-w-7xl bg-indigo-600 lg:bg-transparent lg:px-8">
         <div className="lg:grid lg:grid-cols-12">
           <div className="relative z-10 lg:col-span-4 lg:col-start-1 lg:row-start-1 lg:bg-transparent lg:py-16">
@@ -482,19 +482,19 @@ export default function LandingPage() {
     </div>
     {/* End of CTA Component */}
     {/* Features Component */}
-    <div className="bg-white py-12">
+    <div className="bg-black py-12 font-bubblegum">
       <div className="mx-auto max-w-xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
         <h2 className="sr-only">A better way to send money.</h2>
         <dl className="space-y-10 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
           {features.map((feature) => (
             <div key={feature.name}>
               <dt>
-                <div className="flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white">
+                <div className="flex h-12 w-12 items-center justify-center rounded-md bg-yellow-900 text-white">
                   <feature.icon className="h-6 w-6" aria-hidden="true" />
                 </div>
-                <p className="mt-5 text-lg font-medium leading-6 text-gray-900">{feature.name}</p>
+                <p className="mt-5 text-lg font-medium leading-6 text-white">{feature.name}</p>
               </dt>
-              <dd className="mt-2 text-base text-gray-500">{feature.description}</dd>
+              <dd className="mt-2 text-base text-white">{feature.description}</dd>
             </div>
           ))}
         </dl>
@@ -502,11 +502,11 @@ export default function LandingPage() {
     </div>
     {/* End of Features Component */}
     {/* Simple CTA Component */}
-     <div className="bg-white">
+     <div className="bg-black">
       <div className="mx-auto max-w-7xl py-12 px-4 text-center sm:px-6 lg:py-16 lg:px-8">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          <span className="block">Ready to dive in?</span>
-          <span className="block">Start your free trial today.</span>
+        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <span className="block font-balonku">Ready to dive in?</span>
+          <span className="block font-bubblegum">Start your free trial today.</span>
         </h2>
         <div className="mt-8 flex justify-center">
           <div className="inline-flex rounded-md shadow">
@@ -530,12 +530,12 @@ export default function LandingPage() {
     </div>
     {/* End of Simple CTA Component */}
     {/* Footer Component */}
-    <footer className="bg-white">
+    <footer className="bg-black border-t-2 border-white border-dotted">
       <div className="mx-auto max-w-7xl overflow-hidden py-12 px-4 sm:px-6 lg:px-8">
         <nav className="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
           {footer.main.map((item) => (
             <div key={item.name} className="px-5 py-2">
-              <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+              <a href={item.href} className="text-base text-white hover:text-mooseyellow">
                 {item.name}
               </a>
             </div>
@@ -543,13 +543,13 @@ export default function LandingPage() {
         </nav>
         <div className="mt-8 flex justify-center space-x-6">
           {footer.social.map((item) => (
-            <a key={item.name} href={item.href} target="_blank" rel="noreferrer" className="text-gray-400 hover:text-gray-500">
+            <a key={item.name} href={item.href} target="_blank" rel="noreferrer" className="text-white hover:text-mooseyellow">
               <span className="sr-only">{item.name}</span>
               <item.icon className="h-6 w-6" aria-hidden="true" />
             </a>
           ))}
         </div>
-        <p className="mt-8 text-center text-base text-gray-400">&copy; 2022 Moose English, Inc. All rights reserved.</p>
+        <p className="mt-8 text-center text-base text-white">&copy; 2022 Moose English, Inc. All rights reserved.</p>
       </div>
     </footer>
     {/* End of Footer Component */}

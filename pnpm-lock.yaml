@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@headlessui/react': ^1.6.6
+  '@headlessui/react': ^1.7.0
   '@heroicons/react': ^2.0.10
   '@tailwindcss/aspect-ratio': ^0.4.2
   autoprefixer: ^10.4.8
@@ -15,7 +15,7 @@ specifiers:
   typescript: ^4.8.2
 
 dependencies:
-  '@headlessui/react': 1.6.6_biqbaboplfbrettd7655fr4n2y
+  '@headlessui/react': 1.7.0_biqbaboplfbrettd7655fr4n2y
   '@heroicons/react': 2.0.10_react@18.2.0
   next: 12.2.5_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
@@ -64,8 +64,8 @@ packages:
       - supports-color
     dev: true
 
-  /@headlessui/react/1.6.6_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-MFJtmj9Xh/hhBMhLccGbBoSk+sk61BlP6sJe4uQcVMtXZhCgGqd2GyIQzzmsdPdTEWGSF434CBi8mnhR6um46Q==}
+  /@headlessui/react/1.7.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-/nDsijOXRwXVLpUBEiYuWguIBSIN3ZbKyah+KPUiD8bdIKtX1U/k+qLYUEr7NCQnSF2e4w1dr8me42ECuG3cvw==}
     engines: {node: '>=10'}
     peerDependencies:
       react: ^16 || ^17 || ^18

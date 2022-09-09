@@ -379,6 +379,27 @@ export default function LandingPage() {
           </div>
         </div>{/* End of Hero Component */}
 
+    {/* Features Component */}
+    <div className="bg-black py-12 font-bubblegum">
+      <div className="mx-auto max-w-xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+        <h2 className="sr-only">Study English Online with Moose English.</h2>
+        <dl className="space-y-10 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
+          {features.map((feature) => (
+            <div key={feature.name}>
+              <dt>
+                <div className="flex h-12 w-12 items-center justify-center rounded-md bg-yellow-900 text-white">
+                  <feature.icon className="h-6 w-6" aria-hidden="true" />
+                </div>
+                <p className="mt-5 text-lg font-medium leading-6 text-white">{feature.name}</p>
+              </dt>
+              <dd className="mt-2 text-base text-white">{feature.description}</dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+    </div>
+    {/* End of Features Component */}
+
         {/* CTA Component */}
         <div className="relative bg-black py-16">
       <div className="absolute inset-x-0 top-0 hidden h-1/2 bg-black lg:block" aria-hidden="true" />
@@ -464,26 +485,7 @@ export default function LandingPage() {
       </div>
     </div>
     {/* End of CTA Component */}
-    {/* Features Component */}
-    <div className="bg-black py-12 font-bubblegum">
-      <div className="mx-auto max-w-xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-        <h2 className="sr-only">Study English Online with Moose English.</h2>
-        <dl className="space-y-10 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
-          {features.map((feature) => (
-            <div key={feature.name}>
-              <dt>
-                <div className="flex h-12 w-12 items-center justify-center rounded-md bg-yellow-900 text-white">
-                  <feature.icon className="h-6 w-6" aria-hidden="true" />
-                </div>
-                <p className="mt-5 text-lg font-medium leading-6 text-white">{feature.name}</p>
-              </dt>
-              <dd className="mt-2 text-base text-white">{feature.description}</dd>
-            </div>
-          ))}
-        </dl>
-      </div>
-    </div>
-    {/* End of Features Component */}
+
     {/* Simple CTA Component */}
      <div className="bg-black">
       <div className="mx-auto max-w-7xl py-12 px-4 text-center sm:px-6 lg:py-16 lg:px-8">

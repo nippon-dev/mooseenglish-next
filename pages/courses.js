@@ -42,18 +42,15 @@ const courses = [
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'Courses', href: '/courses' },
-  { name: 'Meet Our Teachers', href: '/meet-our-teachers' },
-  { name: 'Join Our Team', href: '/join-our-team' },
+  { name: 'Moose English Courses', href: '/courses' },
+
 ]
 
 const footer = {
 
 
   main: [
-    { name: 'Courses', href: '/courses' },
-    { name: 'Meet Our Teachers', href: '/meet-our-teachers' },
-    { name: 'Join Our Team', href: '/join-our-team' },
+    { name: 'Moose English Courses', href: '/courses' },
     { name: 'Contact', href: '/contact' },
   ],
   social: [
@@ -250,6 +247,7 @@ export default function SignUp() {
                 Sign in
               </a>
               </Link>
+              {/* Add later
               <Link href="#">
               <a
                 
@@ -258,6 +256,7 @@ export default function SignUp() {
                 Sign up
               </a>
               </Link>
+              */}
             </div>
           </div>
 
@@ -332,6 +331,7 @@ export default function SignUp() {
                       Sign up
                     </a>
                     </Link>
+                    {/* Add later
                     <p className="mt-6 text-center text-base font-medium text-gray-900">
                       Existing student?
                       <Link href="#">
@@ -340,6 +340,7 @@ export default function SignUp() {
                       </a>
                       </Link>
                     </p>
+                    */}
                   </div>
                 </div>
               </div>
@@ -373,14 +374,18 @@ export default function SignUp() {
                     Give Moose English a try with one of our dedicated teachers now. Our teachers follow a specialized English curriculum developed for to our boutique style online English learning centre. 
                   </p>
                   <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
+                    {/* 
                     <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
-                    <Link href="/schedule">
+                    */}
+                     <div className="space-y-4 sm:mx-auto">
+                      <Link href="/schedule">
                       <a
                         className="flex items-center justify-center rounded-md border border-transparent bg-yellow-900 px-4 py-3 text-base font-medium font-bubblegum text-white shadow-sm hover:bg-mooseyellow hover:text-black sm:px-8 uppercase"
                       >
-                        Schedule an appointment
+                        Try a demo lesson now for just $2.99 USD!
                       </a>
-                       </Link>
+                      </Link>
+                      {/* 
                       <Link href="/meet-our-teachers">
                       <a
                         className="flex items-center justify-center rounded-md border border-transparent bg-mooseyellow bg-opacity-60 px-4 py-3 text-base font-medium font-bubblegum text-white shadow-sm hover:bg-yellow-900 sm:px-8 uppercase"
@@ -388,6 +393,7 @@ export default function SignUp() {
                         Meet your teacher
                       </a>
                       </Link>
+                      */}
                     </div>
                   </div>
                 </div>

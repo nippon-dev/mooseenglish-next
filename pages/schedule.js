@@ -42,18 +42,16 @@ const courses = [
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'Courses', href: '/courses' },
-  { name: 'Meet Our Teachers', href: '/meet-our-teachers' },
-  { name: 'Join Our Team', href: '/join-our-team' },
+  { name: 'Moose English Courses', href: '/courses' },
+  { name: 'Contact', href: '/contact' },
 ]
 
 const footer = {
 
 
   main: [
-    { name: 'Courses', href: '/courses' },
-    { name: 'Meet Our Teachers', href: '/meet-our-teachers' },
-    { name: 'Join Our Team', href: '/join-our-team' },
+    { name: 'Home', href: '/' },
+    { name: 'Moose English Courses', href: '/courses' },
     { name: 'Contact', href: '/contact' },
   ],
   social: [
@@ -201,11 +199,13 @@ export default function SignUp() {
               ))}
             </Popover.Group>
             <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
+              {/* 
                 <Link href="/schedule">
               <a className="whitespace-nowrap text-base font-medium text-white hover:text-mooseyellow">
                 Sign in
               </a>
               </Link>
+              */}
               <Link href="#">
               <a
                
@@ -288,6 +288,7 @@ export default function SignUp() {
                       Sign up
                     </a>
                     </Link>
+                    {/* 
                     <p className="mt-6 text-center text-base font-medium text-gray-900">
                       Existing student?
                       <Link href="#">
@@ -296,6 +297,7 @@ export default function SignUp() {
                       </a>
                       </Link>
                     </p>
+                    */}
                   </div>
                 </div>
               </div>

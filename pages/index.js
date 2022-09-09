@@ -43,9 +43,9 @@ const courses = [
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'Courses', href: '/courses' },
-  { name: 'Meet Our Teachers', href: '/meet-our-teachers' },
-  { name: 'Join Our Team', href: '/join-our-team' },
+  { name: 'Moose English Courses', href: '/courses' },
+  { name: 'Contact', href: '/contact' },
+
 ]
 const features = [
   {
@@ -71,10 +71,9 @@ const footer = {
 
 
   main: [
-    { name: 'Courses', href: '/courses' },
-    { name: 'Meet Our Teachers', href: '/meet-our-teachers' },
-    { name: 'Join Our Team', href: '/join-our-team' },
+    { name: 'Moose English Courses', href: '/courses' },
     { name: 'Contact', href: '/contact' },
+
   ],
   social: [
     {
@@ -221,11 +220,13 @@ export default function LandingPage() {
               ))}
             </Popover.Group>
             <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
+              {/* Add later
               <Link href="#">
               <a className="whitespace-nowrap text-base font-medium text-white hover:text-mooseyellow">
                 Sign in
               </a>
               </Link>
+              */}
               <Link href="/schedule">
               <a
                 className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-yellow-900 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-mooseyellow hover:text-black"
@@ -306,6 +307,7 @@ export default function LandingPage() {
                       Sign up
                     </a>
                     </Link>
+                    {/* Add later
                     <p className="mt-6 text-center text-base font-medium text-gray-900">
                       Existing student?
                       <Link href="#">
@@ -314,6 +316,7 @@ export default function LandingPage() {
                       </a>
                       </Link>
                     </p>
+                    */}
                   </div>
                 </div>
               </div>
@@ -345,15 +348,20 @@ export default function LandingPage() {
                   <p className="font-bubblegum mx-auto mt-6 max-w-lg text-center text-xl text-white sm:max-w-3xl">
                     Give Moose English a try with one of our dedicated teachers now. Our teachers follow a specialized English curriculum developed for to our boutique style online English learning centre. 
                   </p>
+
                   <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
+                    {/* 
                     <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
+                    */}
+                     <div className="space-y-4 sm:mx-auto">
                       <Link href="/schedule">
                       <a
                         className="flex items-center justify-center rounded-md border border-transparent bg-yellow-900 px-4 py-3 text-base font-medium font-bubblegum text-white shadow-sm hover:bg-mooseyellow hover:text-black sm:px-8 uppercase"
                       >
-                        Schedule an appointment
+                        Try a demo lesson now for just $2.99 USD!
                       </a>
                       </Link>
+                      {/* 
                       <Link href="/meet-our-teachers">
                       <a
                         className="flex items-center justify-center rounded-md border border-transparent bg-mooseyellow bg-opacity-60 px-4 py-3 text-base font-medium font-bubblegum text-white shadow-sm hover:bg-yellow-900 sm:px-8 uppercase"
@@ -361,51 +369,15 @@ export default function LandingPage() {
                         Meet your teacher
                       </a>
                       </Link>
+                      */}
                     </div>
                   </div>
+                
                 </div>
               </div>
             </div>
           </div>
-
-          {/* Logo cloud */}
-          <div className="bg-black">
-            <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
-              <p className="font-bubblegum text-center text-base font-semibold text-white">
-                Trusted by over 5 very average small businesses
-              </p>
-              <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-                <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                  <img className="h-12" src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg" alt="Tuple" />
-                </div>
-                <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                  <img className="h-12" src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg" alt="Mirage" />
-                </div>
-                <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                  <img
-                    className="h-12"
-                    src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
-                    alt="StaticKit"
-                  />
-                </div>
-                <div className="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
-                  <img
-                    className="h-12"
-                    src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
-                    alt="Transistor"
-                  />
-                </div>
-                <div className="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
-                  <img
-                    className="h-12"
-                    src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg"
-                    alt="Workcation"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        </div>{/* End of Hero Component */}
 
         {/* CTA Component */}
         <div className="relative bg-black py-16">

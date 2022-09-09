@@ -41,18 +41,17 @@ const courses = [
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'Courses', href: '/courses' },
-  { name: 'Meet Our Teachers', href: '/meet-our-teachers' },
-  { name: 'Join Our Team', href: '/join-our-team' },
+  { name: 'Moose English Courses', href: '/courses' },
+  { name: 'Contact', href: '/contact' },
+
 ]
 
 const footer = {
 
 
   main: [
-    { name: 'Courses', href: '/courses' },
-    { name: 'Meet Our Teachers', href: '/meet-our-teachers' },
-    { name: 'Join Our Team', href: '/join-our-team' },
+    { name: 'Home', href: '/' },
+    { name: 'Moose English Courses', href: '/courses' },
     { name: 'Contact', href: '/contact' },
   ],
   social: [

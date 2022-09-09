@@ -42,18 +42,16 @@ const courses = [
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'Courses', href: '/courses' },
-  { name: 'Meet Our Teachers', href: '/meet-our-teachers' },
-  { name: 'Join Our Team', href: '/join-our-team' },
+  { name: 'Moose English Courses', href: '/courses' },
+  { name: 'Contact', href: '/contact' },
 ]
 
 const footer = {
 
 
   main: [
-    { name: 'Courses', href: '/courses' },
-    { name: 'Meet Our Teachers', href: '/meet-our-teachers' },
-    { name: 'Join Our Team', href: '/join-our-team' },
+    { name: 'Home', href: '/' },
+    { name: 'Moose English Courses', href: '/courses' },
     { name: 'Contact', href: '/contact' },
   ],
   social: [
@@ -201,12 +199,14 @@ export default function Contact() {
               ))}
             </Popover.Group>
             <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
+              {/* 
                 <Link href="/schedule">
               <a className="whitespace-nowrap text-base font-medium text-white hover:text-mooseyellow">
                 Sign in
               </a>
               </Link>
-              <Link href="#">
+              */}
+              <Link href="/schedule">
               <a
                 className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-yellow-900 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-mooseyellow hover:text-black"
               >
@@ -286,6 +286,7 @@ export default function Contact() {
                       Sign up
                     </a>
                     </Link>
+                    {/* 
                     <p className="mt-6 text-center text-base font-medium text-gray-900">
                       Existing student?
                       <Link href="#">
@@ -293,7 +294,9 @@ export default function Contact() {
                         Sign in
                       </a>
                       </Link>
+                      
                     </p>
+                    */}
                   </div>
                 </div>
               </div>
@@ -340,6 +343,7 @@ export default function Contact() {
                 </dd>
               </div>
             </dl>
+            {/* Add later
             <p className="mt-6 text-base text-gray-500">
               Looking for careers?{' '}
               <a href="/join-our-team" className="font-medium text-gray-700 underline">
@@ -347,6 +351,7 @@ export default function Contact() {
               </a>
               .
             </p>
+                  */}
           </div>
         </div>
         <div className="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">

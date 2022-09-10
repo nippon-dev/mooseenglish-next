@@ -212,12 +212,13 @@ export default function LandingPage() {
                   </>
                 )}
               </Popover>
-
+           
               {navigation.map((item) => (
                 <a key={item.name} href={item.href} className="text-base font-medium font-bubblegum text-white hover:text-mooseyellow">
                   {item.name}
                 </a>
               ))}
+        
             </Popover.Group>
             <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
               {/* Add later
@@ -231,7 +232,7 @@ export default function LandingPage() {
               <a
                 className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-yellow-900 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-mooseyellow hover:text-black"
               >
-                Sign up
+                Register
               </a>
               </Link>
             </div>
@@ -304,7 +305,7 @@ export default function LandingPage() {
                     <a
                       className="flex w-full items-center justify-center rounded-md border border-transparent bg-yellow-900 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-mooseltblue"
                     >
-                      Sign up
+                      Register
                     </a>
                     </Link>
                     {/* Add later
